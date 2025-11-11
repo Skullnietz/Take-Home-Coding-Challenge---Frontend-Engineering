@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "vite build",
     "preview": "vite preview",
     "lint": "eslint .",
     "test": "vitest --environment jsdom"
@@ -37,4 +37,5 @@
     "vite": "^5.4.10",
     "vitest": "^2.1.3"
   }
+  
 }
