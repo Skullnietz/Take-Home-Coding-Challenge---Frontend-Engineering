@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Paleta/gradiente (opcional) */
+:root {
+  --brand-start: #84beff;
+  --brand-end:   #164883;
+}
+.container-max { max-width: 1100px; margin-left: auto; margin-right: auto; }
+
+/* ==== Componentes de marca ==== */
+@layer components {
+  /* Tarjetas y botones */
+  .card { @apply rounded-2xl border bg-white shadow-card transition hover:-translate-y-px hover:shadow-lg; }
+  .btn-primary { @apply inline-flex items-center justify-center rounded-lg bg-advantec-600 px-4 py-2 font-medium text-white hover:bg-advantec-700 focus:outline-none focus:ring-4 focus:ring-advantec-300 disabled:opacity-60; }
+  .btn-secondary { @apply inline-flex items-center justify-center rounded-lg border px-4 py-2 text-ink-700 hover:bg-advantec-50; }
+
+  /* Badges, inputs, textos */
+  .badge { @apply inline-flex items-center rounded-full bg-advantec-100 text-advantec-800 px-2.5 py-0.5 text-xs font-medium; }
+  .input { @apply w-full rounded-lg border px-3 py-2 focus:outline-none focus:ring-4 focus:ring-advantec-200; }
+  .text-muted { @apply text-sm text-ink-500; }
+}
